@@ -1,0 +1,49 @@
+.news-detail {
+    /* Gaya untuk kelas news-detail di sini */
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.news-detail .card {
+    /* Gaya untuk card di dalam news-detail */
+    border: 2px solid #ccc; /* Ubah lebar border sesuai keinginan Anda */
+    border-radius: 30px; /* Tambahkan border radius sesuai keinginan Anda */
+    padding: 20px; /* Tambahkan padding sesuai keinginan Anda */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tambahkan shadow (bayangan) pada card */
+}
+
+.news-detail .card-body {
+    /* Gaya untuk card body di dalam news-detail */
+    text-align: left;
+}
+
+.news-detail h1 {
+    /* Gaya untuk judul */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.news-detail p.text-center {
+    /* Gaya untuk tanggal */
+    font-size: 16px;
+    color: #777;
+}
+
+.news-detail img.img-fluid {
+    /* Gaya untuk gambar */
+    max-width: 100%;
+    height: auto;
+}
+
+.news-detail p {
+    /* Gaya untuk deskripsi */
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.news-detail .btn-primary {
+    /* Gaya untuk tombol Back */
+    background-color: #007bff;
+    border-color: #007bff;
+}

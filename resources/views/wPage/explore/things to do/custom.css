@@ -1,0 +1,224 @@
+.custom-primary-bg {
+  background-color: #a52f76;
+}
+
+.box {
+  border-color: #141d2a;
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* Define styles for the custom button */
+.custom-button {
+  background-color: #d9d9d9; /* Button background color */
+  color: #cb0001; /* Button text color */
+  padding: 3px; /* Button padding */
+  font-size: 13px;
+  border: none; /* Remove button border */
+  border-radius: 5px; /* Add rounded corners */
+  cursor: pointer; /* Change cursor to a pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth color transition on hover */
+}
+
+/* Style the button on hover */
+.custom-button:hover {
+  color: white;
+  background-color: #cb0001; /* New background color on hover */
+}
+
+.card {
+  margin-bottom: 10px; /* Add space between cards */
+  /* margin-left: 30px; */
+  padding: 10px; /* Add space inside the card */
+  width: 200px;
+  max-height: auto;
+  border-color: transparent;
+  font-family: Lato, sans-serif;
+  border-radius: 4%;
+  background-color: #141d2a;
+}
+
+.card-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 2px;
+}
+
+.custom-card-tgl {
+  font-family: sans-serif;
+  font-size: 14px;
+  border-top-right-radius: 30px; /* Mengatur radius card */
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 30px;
+  margin-left: -10px;
+  margin-bottom: 10px;
+  margin-top: 8px;
+  width: 9rem;
+}
+
+.custom-card-image {
+  border-radius: 10px;
+  width: 180px;
+}
+
+a {
+  text-decoration: none; /* Menghapus garis bawah pada tautan */
+  color: inherit; /* Menggunakan warna teks default (warisan) */
+}
+
+a:hover {
+  color: inherit; /* Anda dapat menggunakan warna yang sesuai dengan desain Anda */
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+}
+
+.section-three {
+  background-color: #121820;
+  border-top-left-radius: 100px; /* Adjust the radius as needed */
+  border-top-right-radius: 100px; /* Adjust the radius as needed */
+}
+
+.section-two {
+  background-color: #0b1119;
+  border-top-left-radius: 100px; /* Adjust the radius as needed */
+  border-top-right-radius: 100px; /* Adjust the radius as needed */
+  padding-top: 5%;
+}
+
+.section-three .card:hover {
+  box-shadow: none; /* Remove the shadow effect for cards in Section 3 */
+  transition: none;
+}
+
+.section-two .card:hover {
+  box-shadow: none; /* Remove the shadow effect for cards in Section 3 */
+  transition: none;
+}
+
+.custom-button {
+  border-radius: 20px;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.container-fluid {
+  padding-left: 10%; /* Adjust the left padding as needed */
+  padding-right: 10%; /* Adjust the right padding as needed */
+  padding-bottom: 5%;
+  justify-content: center;
+}
+
+.container-custom:first-child {
+  padding-top: 60px;
+  padding-bottom: 130px;
+}
+
+.container-custom:last-child {
+  margin-top: -100px;
+}
+
+/* Style the pagination container */
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 12%;
+  margin-bottom: 20px;
+}
+
+/* Style the pagination links */
+.pagination a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  margin: 0 5px;
+  border-radius: 50%;
+  border-color: black;
+  text-decoration: none;
+  color: #333;
+  background-color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Style the active page link */
+.pagination a.active {
+  background-color: #d00404;
+  color: #fff;
+}
+
+.slider-container {
+  position: relative;
+  width: 600px;
+  overflow: hidden;
+}
+.slider {
+  position: relative;
+  width: 100%;
+  white-space: nowrap;
+  transition: transform 0.5s ease-in-out;
+  animation: slideAnimation 5s linear infinite;
+  /* gap: 80px; */
+}
+.slider img {
+  width: 100%;
+  height: auto;
+  /* gap: 20px; */
+}
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.prev-button {
+  left: 0;
+}
+.next-button {
+  right: 0;
+}
+
+@media (max-width: 768px) {
+  .pagination {
+    justify-content: center;
+  }
+
+  .card-container {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-container {
+    gap: 10px;
+  }
+
+  .card {
+    margin-left: 15%;
+  }
+
+  .pagination {
+    margin-left: 1%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .card-container {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .card-container {
+    gap: 40px;
+  }
+}

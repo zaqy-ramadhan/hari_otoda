@@ -1,0 +1,85 @@
+.section-one-culture{
+    background-color: #55C2C3;
+}
+.section-two-culture{
+    background-color: #7E8C9C;
+    border-top-left-radius: 100px; /* Adjust the radius as needed */
+    border-top-right-radius: 100px; /* Adjust the radius as needed */
+    padding-top: 5%;
+}
+.section-three-culture{
+    background-color: #121820;
+    border-top-left-radius: 100px; /* Adjust the radius as needed */
+    border-top-right-radius: 100px; /* Adjust the radius as needed */
+    padding-top: 5%;
+}
+.title-culture{
+    margin-top: 3vw;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+.title-culture-content{
+    margin-top: 15px;
+    color: white;
+    font-size: 50px;
+}
+.separator-culture{
+    border-top: 2px solid white;
+    margin: 20px 0;
+}
+.description-culture{
+   color: white;
+   font-size: 16px;
+   text-align: justify;
+   font-weight: 500;
+}
+.custom-image-culture{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.custom-image-culture img{
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.culture-description{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+  width: 40%; /* Lebar 100% untuk layar kecil */
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .culture-description {
+    padding: 5px;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 8px; /* Ukuran font lebih kecil untuk layar kecil */
+    line-height: 1.1;
+  }
+  .title-culture-custom{
+    font-size: 12px;
+  }
+  .section-two-culture{
+    padding-top: 15%;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-image-culture {
+    flex-direction: column;
+  }
+}

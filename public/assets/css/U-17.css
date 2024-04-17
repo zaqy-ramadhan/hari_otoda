@@ -1,0 +1,247 @@
+/*Navbar*/
+.navbar17 {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.custom-nav17 {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.custom-nav17 .custom-item {
+    margin-left: 10px; /* Mengatur jarak antara kategori */
+}
+
+.custom-nav17 .custom-link {
+    color: #CB0001; /* Warna teks */
+    border-radius: 20px; /* Mengatur border radius */
+    padding: 3px 70px; /* Padding untuk memberi ruang di dalam kotak */
+    background-color: #EEEEEE;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    text-align: center;
+    white-space: nowrap;
+    transition: background-color 0.3s, color 0.3s; /* Transisi warna latar belakang dan teks */
+}
+
+.custom-nav17 .custom-link1 {
+    color: #575757; /* Warna teks */
+    border-radius: 20px; /* Mengatur border radius */
+    padding: 3px 50px; /* Padding untuk memberi ruang di dalam kotak */
+    background-color: #bcc7de;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    text-align: center;
+    white-space: nowrap;
+    transition: background-color 0.3s, color 0.3s; /* Transisi warna latar belakang dan teks */
+}
+
+.navbar17 .custom-link:hover,
+.navbar17 .custom-link.active {
+  background-color: #CB0001; /* Warna latar belakang saat dihover atau aktif */
+  color: #fff; /* Warna teks saat dihover atau aktif */
+  cursor: pointer; /* Ubah kursor menjadi tangan saat dihover */
+}
+
+.navbar17 .custom-link1:hover,
+.navbar17 .custom-link1.active {
+  background-color: #fcd32b; /* Warna latar belakang saat dihover atau aktif */
+  color: #60033B; /* Warna teks saat dihover atau aktif */
+  cursor: pointer; 
+}
+
+/* Media query untuk tampilan responsif */
+@media (max-width: 1070px) {
+    .navbar17 {
+        flex-direction: row;
+        overflow-x: auto; 
+    }
+
+    .custom-nav17 {
+        flex-direction: row;
+    }
+
+    .custom-nav17 .custom-item {
+        margin-left: 5px;
+        margin-bottom: 10px;
+    }
+
+    .custom-nav17 .custom-link, .custom-nav17 .custom-link1 {
+        padding: 5px 15px; /* Adjust padding */
+        white-space: nowrap;
+    }
+}
+.content17-separator {
+    width: 100%;
+    height: 2px;
+    background-color: #c8c8c8;
+    margin-top: 20px;
+}
+.section-one-u17 {
+    background-color: #fcd32b; /* Yellow background color */
+    /* height: 400px; */
+}
+.section-two-u17 {
+    background-color: #ffffff; /* Blue background color */
+    border-top-left-radius: 100px; /* Adjust the radius as needed */
+    border-top-right-radius: 100px; /* Adjust the radius as needed */
+    padding: 40px 15px;
+}
+
+/*Isi Konten*/
+.content {
+    display: none;
+}
+.content1 {
+    margin-top: 20px;
+}
+
+.initial-content {
+    display: block; 
+}
+.text-group{
+ font-weight: 600;
+}
+
+.override{
+    display: block !important;
+}
+
+/* Gaya untuk card group stages */
+.title-group17 {
+    background-color: #CB0001;
+    color: #fff;
+    padding: 5px;
+    width: 90px;
+    font-size: 20px;
+    margin-top: 10px;
+    border-radius: 0 20px 20px 0;
+}
+
+/*Stadium*/
+/* Style for the stadium content */
+#stadium {
+    padding: 20px;
+    margin: 10px 0;
+}
+/* Style for the stadium card */
+.stadium-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+.custom-img-stadium{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+  /* Style for the stadium details */
+.stadium-details {
+    padding: 20px;
+}
+  
+/* Style for the stadium title */
+.stadium-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+}
+  
+  /* Style for stadium description */
+.stadium-description {
+    font-size: 16px;
+    margin-bottom: 10px;
+
+}
+  
+  /* Style for the explore button */
+.explore-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #CB0001;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 600;
+}
+  
+.explore-button:hover {
+    background-color: transparent;
+    color: #CB0001;
+}
+@media (min-width: 768px) {
+    .mobile-stadiumdetail{
+	display: none;
+    }
+}
+  
+/* Gaya untuk mengatur lebar minimum kartu di layar kecil */
+@media (max-width: 767px) {
+    .desktop-stadiumdetail{
+	display: none;
+    }
+    .stadium-card {
+        min-width: 100%;
+        flex-direction: column;
+    }
+}
+
+/*Stadium Detail*/
+.deskripsi{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.72px;
+    color: black;
+    line-height: 1.5;
+    text-align: justify;
+    font-family: 'lato', sans-serif;
+}
+
+.custom-img-stadiumdetail{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.Text-DetailStadium{
+    color: #CB0001;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.StadiumDetail-Side{
+    color: #575757;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.StadiumDetail-Title{
+    color: #575757;
+    font-size: 47px;
+}
+/* Gaya untuk tombol "Back" */
+.back-button {
+    font-size: 14px; /* Ukuran font */
+    background-color: #eeeeee; /* Warna latar belakang tombol */
+    color: #CB0001; /* Warna teks tombol */
+    padding: 2px 20px; /* Padding tombol */
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+    border-radius: 20px; /* Membuat sudut tombol lebih lembut */
+    cursor: pointer; /* Mengubah kursor menjadi tangan saat diarahkan */
+    font-weight: 600;
+}
+
+/* Gaya untuk tombol "Back" saat dihover */
+.back-button:hover {
+    background-color: #CB0001; /* Warna latar belakang saat dihover */
+    color: #EEEEE;
+}

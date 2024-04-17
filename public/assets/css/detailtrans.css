@@ -1,0 +1,342 @@
+.custom-primary-bg {
+    background-color: #a52f76;
+  }
+  
+  .box {
+    border-color: #141d2a;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Define styles for the custom button */
+  .custom-button {
+    background-color: #d9d9d9; /* Button background color */
+    color: #cb0001; /* Button text color */
+    padding: 3px; /* Button padding */
+    font-size: 13px;
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Change cursor to a pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth color transition on hover */
+  }
+  
+  /* Style the button on hover */
+  .custom-button:hover {
+    color: white;
+    background-color: #cb0001; /* New background color on hover */
+  }
+  
+  .cardT {
+    margin-bottom: 10px; /* Add space between cards */
+    /* margin-left: 30px; */
+    padding: 10px; /* Add space inside the card */
+    width: 200px;
+    max-height: auto;
+    border-color: transparent;
+    font-family: Lato, sans-serif;
+    border-radius: 4%;
+    background-color: #141d2a;
+  }
+  
+  .cardT-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 2px;
+  }
+  
+  .custom-cardT-tgl {
+    font-family: sans-serif;
+    font-size: 14px;
+    border-top-right-radius: 30px; /* Mengatur radius card */
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 30px;
+    margin-left: -10px;
+    margin-bottom: 10px;
+    margin-top: 8px;
+    width: 9rem;
+  }
+  
+  .custom-cardT-image {
+    border-radius: 10px;
+  }
+  
+  .container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+  }
+  
+  .section-three {
+    background-color: #121820;
+    border-top-left-radius: 100px; /* Adjust the radius as needed */
+    border-top-right-radius: 100px; /* Adjust the radius as needed */
+  }
+  
+  .section-two {
+    background-color: #F19E4A;
+    border-top-left-radius: 100px; /* Adjust the radius as needed */
+    border-top-right-radius: 100px; /* Adjust the radius as needed */
+    padding-top: 5%;
+  }
+  
+  .section-three .cardT:hover {
+    box-shadow: none; /* Remove the shadow effect for cards in Section 3 */
+    transition: none;
+  }
+  
+  .section-two .cardT:hover {
+    box-shadow: none; /* Remove the shadow effect for cards in Section 3 */
+    transition: none;
+  }
+  
+  .custom-button {
+    border-radius: 20px;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+.custom-img-bus{
+  width: 24.4%;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+  
+  .container-fluid {
+    padding-left: 10%; /* Adjust the left padding as needed */
+    padding-right: 10%; /* Adjust the right padding as needed */
+    padding-bottom: 5%;
+  }
+  
+  .container-custom:first-child {
+    padding-top: 60px;
+    padding-bottom: 130px;
+  }
+  
+  .container-custom:last-child {
+    margin-top: -100px;
+  }
+  
+  
+  #slider {
+    position: relative;
+    width: 50%;
+    height: 32vw;
+    margin-top: 10%;
+    margin: auto;
+    font-family: "Helvetica Neue", sans-serif;
+    perspective: 1400px;
+    transform-style: preserve-3d;
+  }
+  
+  input[type="radio"] {
+    position: relative;
+    left: 50%;
+    width: 18px;
+    height: 18px;
+    margin: 0 15px 0 0;
+    opacity: 0.4;
+    transform: translateX(-83px);
+    cursor: pointer;
+  }
+  
+  #slider input[type="radio"] {
+    display: none;
+  }
+  
+  input[type="radio"]:nth-child(5) {
+    margin-right: 0px;
+  }
+  
+  input[type="radio"]:checked {
+    opacity: 1;
+  }
+  
+  #slider label,
+  #slider label img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 400ms ease;
+  }
+  
+  /* for center image */
+  #s1:checked ~ #slide1,
+  #s2:checked ~ #slide2,
+  #s3:checked ~ #slide3,
+  #s4:checked ~ #slide4,
+  #s5:checked ~ #slide5 {
+    transform: translate3d(0%, 0, 0px);
+  }
+  
+  /* for next image 1 */
+  #s1:checked ~ #slide2,
+  #s2:checked ~ #slide3,
+  #s3:checked ~ #slide4,
+  #s4:checked ~ #slide5,
+  #s5:checked ~ #slide1 {
+    transform: translate3d(20%, 0, -100px);
+  }
+  
+  /* for next image 2 */
+  #s1:checked ~ #slide3,
+  #s2:checked ~ #slide4,
+  #s3:checked ~ #slide5,
+  #s4:checked ~ #slide1,
+  #s5:checked ~ #slide2 {
+    transform: translate3d(40%, 0, -250px);
+  }
+  
+  /* for prev image 1 */
+  #s1:checked ~ #slide5,
+  #s2:checked ~ #slide1,
+  #s3:checked ~ #slide2,
+  #s4:checked ~ #slide3,
+  #s5:checked ~ #slide4 {
+    transform: translate3d(-20%, 0, -100px);
+  }
+  
+  /* for prev image 2 */
+  #s1:checked ~ #slide4,
+  #s2:checked ~ #slide5,
+  #s3:checked ~ #slide1,
+  #s4:checked ~ #slide2,
+  #s5:checked ~ #slide3 {
+    transform: translate3d(-40%, 0, -250px);
+  }
+  
+  @media (max-width: 768px) {
+  
+    .cardT-container {
+      gap: 10px;
+    }
+    .custom-img-bus{
+      width: 24%;
+}
+  }
+  
+  @media (max-width: 576px) {
+    .cardT-container {
+      gap: 10px;
+    }
+  
+    .cardT {
+      margin-left: 15%;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .cardT-container {
+      gap: 30px;
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    .cardT-container {
+      gap: 40px;
+    }
+  }
+  
+  
+  .column {
+    float: left;
+    padding: 15px;
+  }
+  
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .menu {
+    width: 25%;
+  }
+  
+  .content {
+    width: 75%;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: #ffffff;
+    color: #052451;
+  }
+  
+  .menu li:hover {
+    background-color: #ffffff;
+  }
+  .my-slider-container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.my-slider {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.my-img-slide {
+  width: 100%;
+  border: 2px solid #000;
+  border-radius: 15px;
+}
+
+.my-slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: #f0f0f0;
+  border: 1px solid #000;
+  cursor: pointer;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-prev-button {
+  left: 0;
+}
+
+.my-next-button {
+  right: 0;
+} 
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

@@ -1,0 +1,181 @@
+.section-one-explore {
+  background-color: #16724f;
+  padding-top: 5%;
+}
+
+.row-cols-1 .custom-hotel-container {
+  margin: 20px; /* Menambahkan jarak 20px di bagian bawah setiap kartu */
+}
+
+.section-three-explore {
+  background-color: #7eb6db; /* Blue background color */
+  border-top-left-radius: 100px; /* Adjust the radius as needed */
+  border-top-right-radius: 100px; /* Adjust the radius as needed */
+}
+
+.section-two-explore {
+  background-color: #181c24;
+  border-top-left-radius: 100px; /* Adjust the radius as needed */
+  border-top-right-radius: 100px; /* Adjust the radius as needed */
+  padding-top: 6%;
+  
+}
+.text-things{
+  font-size: 35px;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  font-weight: 800;
+}
+
+.custom-button-explore{
+  background-color: #A52F76;
+  border: 2px solid #FCD32B;
+  font-size: 18px;
+  color: #FCD32B;
+  border-radius: 20px;
+  font-weight: bold;
+  width: 30%;
+}
+.custom-button-explore:hover{
+  color: #A52F76;
+  background-color: #FCD32B;
+}
+
+.custom-text-container {
+  position: relative;
+  text-align: center;
+  margin-top: 6vw;
+  margin-bottom: 6vw;
+}
+
+.custom-text-hover {
+  font-size: 8vw;
+  font-weight: 800;
+  color: transparent;
+  text-align: center;
+  -webkit-text-stroke: 0.4vw #16724F;
+  position: relative;
+  z-index: 1;
+}
+
+.custom-text-hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(165, 47, 118, 0);
+  mix-blend-mode: multiply;
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.custom-text-container:hover .custom-text-hover {
+  cursor: none;
+  -webkit-text-stroke: 0.4vw #A52F76;
+}
+
+.custom-text-container:hover .custom-circle {
+  transform: translate(-50%, -50%) scale(1);
+  background-color: rgba(165, 47, 118, 0.95);
+}
+
+.custom-circle {
+  position: absolute;
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  background-color: rgba(165, 47, 118, 1);
+  mix-blend-mode: plus-lighter;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.3s ease;
+}
+
+
+@media (max-width: 990px) {
+    .custom-text-container{
+    margin-top: -10vw;
+}
+.custom-circle {
+  display: none;
+}
+}
+@media (max-width: 960px) {
+    .custom-text-container{
+    margin-top: -15vw;
+}
+.custom-circle {
+  display: none:
+}
+}
+@media (max-width: 587px) {
+    .custom-text-container{
+    margin-top: -19vw;
+}
+.custom-circle {
+  display: none;
+}
+}
+.my-card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.my-card {
+  width: 250px;
+  padding: 20px;
+  margin: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.my-card:hover .my-card-button {
+  display: flex;
+}
+
+.my-card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.my-card-content {
+  margin-top: 10px;
+  position: relative;
+}
+
+.my-card-title {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.my-card-button {
+  font-size: 0.9em;
+  display: none;
+  text-decoration: none;
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.my-card-button:hover {
+  background-color: #0056b3;
+}
+
+.my-card-button a {
+  color: white;
+  text-decoration: none;
+}
+
+.my-card-button a:hover {
+  color: white;
+  text-decoration: none;
+}

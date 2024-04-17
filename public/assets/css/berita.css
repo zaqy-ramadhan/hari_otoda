@@ -1,0 +1,118 @@
+body{
+    font-family: 'lato', sans-serif;
+}
+
+.custom-card-news{
+    margin-bottom: -10px;
+    margin-left: -5px;
+}
+
+.card .card-img-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0));
+    opacity: 1;
+    border-radius: 30px;
+}
+.section-two-news {
+    background-color: #fff; /* Blue background color */
+    border-top-left-radius: 100px; /* Adjust the radius as needed */
+    border-top-right-radius: 100px;
+}
+.section-one-news {
+    background-color: #71C7BA;
+}
+@media (min-width: 870px){
+.custom-img-news-title{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-height: 300px;
+    margin-left: 10vw;
+    max-width: auto;
+}
+}
+
+.custom-title-news{
+    color: #FFFFFF;
+
+}
+.custom-img-news1{
+    width: 100%; /* Sesuaikan dengan lebar yang diinginkan */
+    height: 485px; /* Atur tinggi yang diinginkan */
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.custom-img-news{
+    width: 100%; /* Sesuaikan dengan lebar yang diinginkan */
+    height: 200px; /* Atur tinggi yang diinginkan */
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.custom-judul{
+    font-weight: 800;
+    color: #575757;
+    white-space: nowrap; /* Hindari pemisahan kata */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.custom-teks-news{
+    color: #cb0001;
+    font-weight: 500;
+}
+.custom-title-news{
+    font-size: 18px;
+
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.custom-search-form {
+    margin-right: 10px; 
+    border-radius: 50px; 
+}
+
+.custom-form-control {
+    width: 225px;
+    padding: 5px;
+    background-color: #eeeeee;
+    color: #575757;
+    border-radius: 50px;
+    border: none;
+    margin-left: 5px;
+}
+
+.custom-search-button {
+    border-radius: 50px; 
+    background-color: #eeeeee;
+    color: #cb0001;
+    border: none;
+    padding: 5px;
+    width: 70px;
+    margin-left: 20px;
+}
+
+@media (max-width: 768px){
+    .custom-img-news1{
+    width: 100%; /* Sesuaikan dengan lebar yang diinginkan */
+    height: auto; /* Atur tinggi yang diinginkan */
+    object-fit: cover;
+    border-radius: 30px;
+    }
+.custom-img-news-title{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+}

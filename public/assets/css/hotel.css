@@ -1,0 +1,1147 @@
+/* Section One */
+.section-one-hotel {
+  background-color: #cb0001;
+  /* height: 400px; */
+}
+
+.section-one-hotel h1 {
+  color: #fff;
+  font-weight: bold;
+}
+
+.section-one-hotel img {
+  max-height: 891px;
+  max-width: auto;
+}
+
+/* Section Two */
+.section-two-hotel {
+  background-color: #ffffff; /* Blue background color */
+  border-top-left-radius: 100px; /* Adjust the radius as needed */
+  border-top-right-radius: 100px; /* Adjust the radius as needed */
+  padding-top: 5%;
+}
+
+/* Section Three */
+.section-three-hotel {
+  background-color: #121820; 
+  border-top-left-radius: 100px; /* Adjust the radius as needed */
+  border-top-right-radius: 100px; /* Adjust the radius as needed */
+  padding-top: 5%;
+}
+
+
+/* Style for the card */
+.custom-hotel-container {
+  display: flex;
+  justify-content: space-between; 
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 290px;
+}
+
+.custom-card-hotel {
+  border: none;
+  border-radius: 4%;
+}
+.custom-hotel-container:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-hotel-img {
+  width: 290px;
+  height: 190px;
+  border-radius: 4%;
+}
+
+.custom-hotel-content {
+ text-align: left;
+ padding: 5px;
+}
+
+.custom-hotel-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.custom-hotel-address {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.custom-btn-hotel {
+  display: inline-block;
+  font-size: 16px;
+  padding: 4px 20px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  font-weight: 700;
+  border-radius: 100px;
+  cursor: pointer;
+  background-color: #EEEEEE;
+  color: #cb0001;
+  margin: 5px;
+}
+.custom-btn-hotel:hover {
+  background-color: #cb0001;
+  color: #EEEEEE;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .custom-card-hotel {
+      max-width: 100%;
+      margin-top: 20px;
+  }
+  .custom-card-container{
+    flex-direction: column; /* Ubah ke tata letak kolom pada layar kecil */
+    align-items: center;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.pagination .pagination-button {
+  margin: 0 5px;
+  list-style: none;
+  display: inline-block;
+  padding: 10px 15px;
+  text-align: center;
+  color: #fff;
+  background-color: #007BFF;
+  border: 1px solid #007BFF;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.pagination .pagination-button:hover {
+  background-color: #0056b3;
+  border: 1px solid #0056b3;
+}
+
+.pagination .pagination-button.active-button {
+  background-color: #0056b3;
+  border: 1px solid #0056b3;
+}
+
+/* Responsif pada layar dengan lebar kurang dari atau sama dengan 768px */
+@media (max-width: 768px) {
+  .pagination .pagination-button {
+    margin: 0 3px; /* Sesuaikan margin untuk perangkat dengan layar kecil */
+    font-size: 12px; /* Sesuaikan ukuran font */
+    padding: 8px 12px; /* Sesuaikan padding */
+  }
+}
+/* Culinary */
+.sectionC-one {
+background-color: #7C6398;
+/* height: 400px; */
+}
+
+.sectionC-one h1 {
+color: #fff;
+font-weight: bold;
+}
+
+/* Section Two */
+.sectionC-two {
+background-color: #fff; /* Blue background color */
+border-top-left-radius: 100px; /* Adjust the radius as needed */
+border-top-right-radius: 100px; /* Adjust the radius as needed */
+padding-top: 5%;
+}
+
+/* Section Three */
+.sectionC-three {
+background-color: #181c24; 
+border-top-left-radius: 100px; /* Adjust the radius as needed */
+border-top-right-radius: 100px; /* Adjust the radius as needed */
+padding-top: 5%;
+}
+
+
+/* Style for the card */
+.cardC {
+margin-bottom: 5px; /* Add space between cards */
+padding: 10px; /* Add space inside the card */
+width: 100%;
+max-height: auto;
+border-color: transparent;
+font-family: Lato, sans-serif;
+border-radius: 4%;
+}
+
+/* Add a shadow effect to cards in Section 2 when hovered */
+.sectionC-two .card:hover {
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+transition: box-shadow 0.3s ease, transform 0.3s ease; /* Optional: Add a smooth transition effect */
+}
+
+/* Exclude cards in Section 3 from the hover effect */
+.sectionC-three .card:hover {
+box-shadow: none; /* Remove the shadow effect for cards in Section 3 */
+transition: none;
+}
+
+.cardC img {
+max-height: auto;
+margin: 2px;
+max-width: 100%;
+align-items: center;
+border-radius: 4%;
+}
+
+.cardC h5 {
+font-weight: bold;
+}
+
+
+/* Style the button on the card */
+.cardC .btn-primary {
+border-radius: 20px; /* Rounded edges */
+background-color: #f0f0f0; /* Light grey background color */
+color: #d00404; /* Red text color */
+border: none; /* Remove button border */
+transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+padding-left: 20px;
+padding-right: 20px;
+}
+
+/* Style the button on hover */
+.cardC .btn-primary:hover {
+background-color: #d00404; /* Red background color on hover */
+color: #f0f0f0; /* text color on hover */
+}
+
+
+/* Style the pagination container */
+.paginationC {
+text-align: center;
+margin-top: 20px;
+}
+
+/* Style the pagination links */
+.paginationC a {
+display: inline-block;
+width: 30px;
+height: 30px;
+text-align: center;
+line-height: 30px;
+margin: 0 5px;
+border-radius: 50%;
+border-color: black;
+text-decoration: none;
+color: #333;
+background-color: #fff;
+transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Style the active page link */
+.paginationC a.active {
+background-color: #d00404;
+color: #fff;
+}
+
+#sliderC {
+position: relative;
+width: 50%;
+height: 32vw;
+margin-top: 10%;
+margin: auto;
+font-family: 'Helvetica Neue', sans-serif;
+perspective: 1400px;
+transform-style: preserve-3d;
+}
+
+input[type=radio] {
+position: relative;
+/* top: 108%; */
+left: 50%;
+width: 18px;
+height: 18px;
+margin: 0 15px 0 0;
+opacity: 0.4;
+transform: translateX(-83px);
+cursor: pointer;
+}
+
+#sliderC input[type="radio"] {
+display: none;
+}
+
+input[type=radio]:nth-child(5) {
+margin-right: 0px;
+}
+
+input[type=radio]:checked {
+opacity: 1;
+}
+
+#sliderC label,
+#sliderC label img {
+position: absolute;
+width: 100%;
+height: auto;
+left: 0;
+top: 0;
+color: white;
+/* font-size: 70px; */
+font-weight: bold;
+border-radius: 3px;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: transform 400ms ease;
+}
+
+/* for center image */
+#s1:checked ~ #slide1,
+#s2:checked ~ #slide2,
+#s3:checked ~ #slide3,
+#s4:checked ~ #slide4,
+#s5:checked ~ #slide5 {
+/* box-shadow: 0 13px 26px rgba(0,0,0, 0.3), 0 12px 6px rgba(0,0,0, 0.2); */
+transform: translate3d(0%, 0, 0px);
+}
+
+/* for next image 1 */
+#s1:checked ~ #slide2,
+#s2:checked ~ #slide3,
+#s3:checked ~ #slide4,
+#s4:checked ~ #slide5,
+#s5:checked ~ #slide1 {
+/* box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2); */
+transform: translate3d(20%, 0, -100px);
+}
+
+/* for next image 2 */
+#s1:checked ~ #slide3,
+#s2:checked ~ #slide4,
+#s3:checked ~ #slide5,
+#s4:checked ~ #slide1,
+#s5:checked ~ #slide2 {
+/* box-shadow: 0 1px 4px rgba(0,0,0, 0.4); */
+transform: translate3d(40%, 0, -250px);
+}
+
+/* for prev image 1 */
+#s1:checked ~ #slide5,
+#s2:checked ~ #slide1,
+#s3:checked ~ #slide2,
+#s4:checked ~ #slide3,
+#s5:checked ~ #slide4 {
+/* box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2); */
+transform: translate3d(-20%, 0, -100px);
+}
+
+/* for prev image 2 */
+#s1:checked ~ #slide4,
+#s2:checked ~ #slide5,
+#s3:checked ~ #slide1,
+#s4:checked ~ #slide2,
+#s5:checked ~ #slide3 {
+/* box-shadow: 0 1px 4px rgba(0,0,0, 0.4); */
+transform: translate3d(-40%, 0, -250px);
+}
+
+/* heritage */
+.sectionH-one {
+background-color: #296FD8;
+}
+
+.sectionH-one h1 {
+color: #fff;
+font-weight: bold;
+}
+
+.sectionH-one img {
+max-height: 891px;
+max-width: auto;
+}
+
+/* Section Two */
+.sectionH-two {
+background-color: #fff; /* Blue background color */
+border-top-left-radius: 100px; /* Adjust the radius as needed */
+border-top-right-radius: 100px; /* Adjust the radius as needed */
+padding-top: 5%;
+}
+
+/* Section Three */
+.sectionH-three {
+background-color: #181c24; 
+border-top-left-radius: 100px; /* Adjust the radius as needed */
+border-top-right-radius: 100px; /* Adjust the radius as needed */
+padding-top: 5%;
+}
+
+
+/* Style for the card */
+.cardH {
+margin-bottom: 5px; /* Add space between cards */
+padding: 10px; /* Add space inside the card */
+width: 100%;
+max-height: auto;
+border-color: transparent;
+font-family: Lato, sans-serif;
+border-radius: 4%;
+}
+
+/* Add a shadow effect to cards in Section 2 when hovered */
+.sectionH-two .card:hover {
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+transition: box-shadow 0.3s ease, transform 0.3s ease; /* Optional: Add a smooth transition effect */
+}
+
+/* Exclude cards in Section 3 from the hover effect */
+.sectionH-three .card:hover {
+box-shadow: none; /* Remove the shadow effect for cards in Section 3 */
+transition: none;
+}
+
+.cardH img {
+max-height: auto;
+margin: 2px;
+max-width: 100%;
+align-items: center;
+border-radius: 4%;
+}
+
+.cardH h5 {
+font-weight: bold;
+}
+
+
+/* Style the button on the card */
+.cardH .btn-primary {
+border-radius: 20px; /* Rounded edges */
+background-color: #f0f0f0; /* Light grey background color */
+color: #d00404; /* Red text color */
+border: none; /* Remove button border */
+transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+padding-left: 20px;
+padding-right: 20px;
+}
+
+/* Style the button on hover */
+.cardH .btn-primary:hover {
+background-color: #d00404; /* Red background color on hover */
+color: #f0f0f0; /* text color on hover */
+}
+
+
+/* Style the pagination container */
+.paginationH {
+text-align: center;
+margin-top: 20px;
+}
+
+/* Style the pagination links */
+.paginationH a {
+display: inline-block;
+width: 30px;
+height: 30px;
+text-align: center;
+line-height: 30px;
+margin: 0 5px;
+border-radius: 50%;
+border-color: black;
+text-decoration: none;
+color: #333;
+background-color: #fff;
+transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Style the active page link */
+.paginationH a.active {
+background-color: #d00404;
+color: #fff;
+}
+
+#sliderH {
+position: relative;
+width: 50%;
+height: 32vw;
+margin-top: 10%;
+margin: auto;
+font-family: 'Helvetica Neue', sans-serif;
+perspective: 1400px;
+transform-style: preserve-3d;
+}
+
+input[type=radio] {
+position: relative;
+/* top: 108%; */
+left: 50%;
+width: 18px;
+height: 18px;
+margin: 0 15px 0 0;
+opacity: 0.4;
+transform: translateX(-83px);
+cursor: pointer;
+}
+
+#sliderH input[type="radio"] {
+display: none;
+}
+
+input[type=radio]:nth-child(5) {
+margin-right: 0px;
+}
+
+input[type=radio]:checked {
+opacity: 1;
+}
+
+#sliderH label,
+#sliderH label img {
+position: absolute;
+width: 100%;
+height: auto;
+left: 0;
+top: 0;
+color: white;
+/* font-size: 70px; */
+font-weight: bold;
+border-radius: 3px;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: transform 400ms ease;
+}
+
+/* for center image */
+#s1:checked ~ #slide1,
+#s2:checked ~ #slide2,
+#s3:checked ~ #slide3,
+#s4:checked ~ #slide4,
+#s5:checked ~ #slide5 {
+/* box-shadow: 0 13px 26px rgba(0,0,0, 0.3), 0 12px 6px rgba(0,0,0, 0.2); */
+transform: translate3d(0%, 0, 0px);
+}
+
+/* for next image 1 */
+#s1:checked ~ #slide2,
+#s2:checked ~ #slide3,
+#s3:checked ~ #slide4,
+#s4:checked ~ #slide5,
+#s5:checked ~ #slide1 {
+/* box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2); */
+transform: translate3d(20%, 0, -100px);
+}
+
+/* for next image 2 */
+#s1:checked ~ #slide3,
+#s2:checked ~ #slide4,
+#s3:checked ~ #slide5,
+#s4:checked ~ #slide1,
+#s5:checked ~ #slide2 {
+/* box-shadow: 0 1px 4px rgba(0,0,0, 0.4); */
+transform: translate3d(40%, 0, -250px);
+}
+
+/* for prev image 1 */
+#s1:checked ~ #slide5,
+#s2:checked ~ #slide1,
+#s3:checked ~ #slide2,
+#s4:checked ~ #slide3,
+#s5:checked ~ #slide4 {
+/* box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2); */
+transform: translate3d(-20%, 0, -100px);
+}
+
+/* for prev image 2 */
+#s1:checked ~ #slide4,
+#s2:checked ~ #slide5,
+#s3:checked ~ #slide1,
+#s4:checked ~ #slide2,
+#s5:checked ~ #slide3 {
+/* box-shadow: 0 1px 4px rgba(0,0,0, 0.4); */
+transform: translate3d(-40%, 0, -250px);
+}
+
+/* Shopping */
+.sectionP-one {
+background-color: #FF8000;
+/* height: 400px; */
+}
+
+.sectionP-one h1 {
+color: #fff;
+font-weight: bold;
+}
+
+.sectionP-one img {
+max-height: 891px;
+max-width: auto;
+}
+
+.containerP-fluid {
+padding-left: 10%; /* Adjust the left padding as needed */
+padding-right: 10%; /* Adjust the right padding as needed */
+padding-bottom: 5%;
+}
+
+/* Section Two */
+.sectionP-two {
+background-color: #fff; /* Blue background color */
+border-top-left-radius: 100px; /* Adjust the radius as needed */
+border-top-right-radius: 100px; /* Adjust the radius as needed */
+/* padding: 5%; */
+}
+
+/* Section Three */
+.sectionP-three {
+background-color: #181c24; 
+border-top-left-radius: 100px; /* Adjust the radius as needed */
+border-top-right-radius: 100px; /* Adjust the radius as needed */
+padding-top: 5%;
+}
+
+
+/* Style for the card */
+.cardP {
+margin-bottom: 5px; /* Add space between cards */
+padding: 10px; /* Add space inside the card */
+width: 100%;
+max-height: auto;
+border-color: transparent;
+font-family: Lato, sans-serif;
+border-radius: 4%;
+}
+
+/* Add a shadow effect to cards in Section 2 when hovered */
+.sectionP-two .card:hover {
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+transition: box-shadow 0.3s ease, transform 0.3s ease; /* Optional: Add a smooth transition effect */
+}
+
+/* Exclude cards in Section 3 from the hover effect */
+.sectionP-three .card:hover {
+box-shadow: none; /* Remove the shadow effect for cards in Section 3 */
+transition: none;
+}
+
+.cardP img {
+max-height: auto;
+margin: 2px;
+max-width: 100%;
+align-items: center;
+border-radius: 4%;
+}
+
+.cardP h5 {
+font-weight: bold;
+}
+
+
+/* Style the button on the card */
+.cardP .btn-primary {
+border-radius: 20px; /* Rounded edges */
+background-color: #f0f0f0; /* Light grey background color */
+color: #d00404; /* Red text color */
+border: none; /* Remove button border */
+transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+padding-left: 20px;
+padding-right: 20px;
+}
+
+/* Style the button on hover */
+.cardP .btn-primary:hover {
+background-color: #d00404; /* Red background color on hover */
+color: #f0f0f0; /* text color on hover */
+}
+
+
+/* Style the pagination container */
+.paginationP {
+text-align: center;
+margin-top: 20px;
+}
+
+/* Style the pagination links */
+.paginationP a {
+display: inline-block;
+width: 30px;
+height: 30px;
+text-align: center;
+line-height: 30px;
+margin: 0 5px;
+border-radius: 50%;
+border-color: black;
+text-decoration: none;
+color: #333;
+background-color: #fff;
+transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Style the active page link */
+.paginationP a.active {
+background-color: #d00404;
+color: #fff;
+}
+
+#sliderP {
+position: relative;
+width: 50%;
+height: 32vw;
+margin-top: 10%;
+margin: auto;
+font-family: 'Helvetica Neue', sans-serif;
+perspective: 1400px;
+transform-style: preserve-3d;
+}
+
+input[type=radio] {
+position: relative;
+/* top: 108%; */
+left: 50%;
+width: 18px;
+height: 18px;
+margin: 0 15px 0 0;
+opacity: 0.4;
+transform: translateX(-83px);
+cursor: pointer;
+}
+
+#sliderP input[type="radio"] {
+display: none;
+}
+
+input[type=radio]:nth-child(5) {
+margin-right: 0px;
+}
+
+input[type=radio]:checked {
+opacity: 1;
+}
+
+#sliderP label,
+#sliderP label img {
+position: absolute;
+width: 100%;
+height: auto;
+left: 0;
+top: 0;
+color: white;
+/* font-size: 70px; */
+font-weight: bold;
+border-radius: 3px;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: transform 400ms ease;
+}
+
+/* for center image */
+#s1:checked ~ #slide1,
+#s2:checked ~ #slide2,
+#s3:checked ~ #slide3,
+#s4:checked ~ #slide4,
+#s5:checked ~ #slide5 {
+/* box-shadow: 0 13px 26px rgba(0,0,0, 0.3), 0 12px 6px rgba(0,0,0, 0.2); */
+transform: translate3d(0%, 0, 0px);
+}
+
+/* for next image 1 */
+#s1:checked ~ #slide2,
+#s2:checked ~ #slide3,
+#s3:checked ~ #slide4,
+#s4:checked ~ #slide5,
+#s5:checked ~ #slide1 {
+/* box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2); */
+transform: translate3d(20%, 0, -100px);
+}
+
+/* for next image 2 */
+#s1:checked ~ #slide3,
+#s2:checked ~ #slide4,
+#s3:checked ~ #slide5,
+#s4:checked ~ #slide1,
+#s5:checked ~ #slide2 {
+/* box-shadow: 0 1px 4px rgba(0,0,0, 0.4); */
+transform: translate3d(40%, 0, -250px);
+}
+
+/* for prev image 1 */
+#s1:checked ~ #slide5,
+#s2:checked ~ #slide1,
+#s3:checked ~ #slide2,
+#s4:checked ~ #slide3,
+#s5:checked ~ #slide4 {
+/* box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2); */
+transform: translate3d(-20%, 0, -100px);
+}
+
+/* for prev image 2 */
+#s1:checked ~ #slide4,
+#s2:checked ~ #slide5,
+#s3:checked ~ #slide1,
+#s4:checked ~ #slide2,
+#s5:checked ~ #slide3 {
+/* box-shadow: 0 1px 4px rgba(0,0,0, 0.4); */
+transform: translate3d(-40%, 0, -250px);
+}
+
+/* Tourism Spot */
+.sectionT-one {
+background-color: #20E1CE;
+/* height: 400px; */
+}
+
+.sectionT-one h1 {
+color: #fff;
+font-weight: bold;
+}
+
+.sectionT-one img {
+max-height: 891px;
+max-width: auto;
+}
+
+.containerT-fluid {
+padding-left: 10%; /* Adjust the left padding as needed */
+padding-right: 10%; /* Adjust the right padding as needed */
+padding-bottom: 5%;
+}
+
+/* Section Two */
+.sectionT-two {
+background-color: #fff; /* Blue background color */
+border-top-left-radius: 100px; /* Adjust the radius as needed */
+border-top-right-radius: 100px; /* Adjust the radius as needed */
+/* padding: 5%; */
+}
+
+/* Section Three */
+.sectionT-three {
+background-color: #181c24; 
+border-top-left-radius: 100px; /* Adjust the radius as needed */
+border-top-right-radius: 100px; /* Adjust the radius as needed */
+padding-top: 5%;
+}
+
+
+/* Style for the card */
+.cardT {
+margin-bottom: 5px; /* Add space between cards */
+padding: 10px; /* Add space inside the card */
+width: 100%;
+max-height: auto;
+border-color: transparent;
+font-family: Lato, sans-serif;
+border-radius: 4%;
+}
+
+/* Add a shadow effect to cards in Section 2 when hovered */
+.sectionT-two .card:hover {
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+transition: box-shadow 0.3s ease, transform 0.3s ease; /* Optional: Add a smooth transition effect */
+}
+
+/* Exclude cards in Section 3 from the hover effect */
+.sectionT-three .card:hover {
+box-shadow: none; /* Remove the shadow effect for cards in Section 3 */
+transition: none;
+}
+
+.cardT img {
+max-height: auto;
+margin: 2px;
+max-width: 100%;
+align-items: center;
+border-radius: 4%;
+}
+
+.cardT h5 {
+font-weight: bold;
+}
+
+
+/* Style the button on the card */
+.cardT .btn-primary {
+border-radius: 20px; /* Rounded edges */
+background-color: #f0f0f0; /* Light grey background color */
+color: #d00404; /* Red text color */
+border: none; /* Remove button border */
+transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+padding-left: 20px;
+padding-right: 20px;
+}
+
+/* Style the button on hover */
+.cardT .btn-primary:hover {
+background-color: #d00404; /* Red background color on hover */
+color: #f0f0f0; /* text color on hover */
+}
+
+
+/* Style the pagination container */
+.paginationT {
+text-align: center;
+margin-top: 20px;
+}
+
+/* Style the pagination links */
+.paginationT a {
+display: inline-block;
+width: 30px;
+height: 30px;
+text-align: center;
+line-height: 30px;
+margin: 0 5px;
+border-radius: 50%;
+border-color: black;
+text-decoration: none;
+color: #333;
+background-color: #fff;
+transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Style the active page link */
+.paginationT a.active {
+background-color: #d00404;
+color: #fff;
+}
+
+.star {
+  font-size: 20px; /* Adjust the size of stars as needed */
+  color: white; /* Color of stars (yellow) */
+}
+
+.full-star {
+  color: #FFD700; /* Color of full stars (yellow) */
+}
+
+.modal-body {
+    position: relative;
+    padding: 15px;
+    overflow-y: auto; /* This enables vertical scrolling for modal content */
+}
+
+ .pagination-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .pagination-button {
+            background-color: #007bff;
+            color: #fff;
+            border: 1px solid #007bff;
+            padding: 5px 10px;
+            margin: 0 5px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .pagination-button.active-button {
+            background-color: #fff;
+            color: #007bff;
+        }
+.custom-cullinary-container {
+            margin: 5px;
+   	    
+        }
+
+        /* CSS untuk custom-card-culinary */
+        .custom-card-culinary {
+            position: relative;
+            overflow: hidden;
+	    transition: box-shadow 0.3s;
+        }
+
+        /* Efek shadow saat dihover */
+        .custom-card-culinary:hover {
+            box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.6);
+        }
+
+        /* CSS untuk custom-culinary-img */
+        .custom-culinary-img {
+            width: 100%;
+            height: 200px;
+            transition: transform 0.3s;
+	    border-radius: 20px;
+        }
+
+        /* Efek hover pada gambar */
+        .custom-cullinary-container:hover .custom-culinary-img {
+            transform: scale(1.05);
+        }
+
+        /* CSS untuk custom-culinary-content */
+        .custom-culinary-content {
+            background-color: #fff;
+            padding: 10px;
+        }
+
+        /* CSS untuk custom-btn-culinary dan custom-btn-primary */
+        .custom-btn-culinary {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        /* Efek hover pada tombol */
+        .custom-btn-culinary:hover {
+            background-color: #2980b9;
+        }
+
+        /* Styling untuk card-title */
+        .card-title-culinary {
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+ /* Add this CSS for centering the pop-up modal */
+        .custom-modal1 {
+            display: none;
+            /* Hide the modal by default */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            /* Semi-transparent background */
+            overflow: auto;
+	    
+        }
+
+        .custom-modal1-content {
+            background-color: #fff;
+            margin: 15% auto;
+            /* Adjust the margin to center the modal vertically */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 70%;
+            max-width: 600px;
+            /* Set a maximum width for the modal */
+            position: relative;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+	    border-radius:20px;
+        }
+
+        .custom-modal1-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        .custom-modal1-close:hover {
+            color: red;
+        }
+
+        /* Additional styles for custom-modalDescription if needed */
+        #customModal1Description {
+            margin-top: 20px;
+        }
+
+.destination-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 300px;
+    display: inline-block;
+}
+
+.destination-box img {
+    max-width: 100%;
+    height: auto;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .popup-content {
+    background-color: #fff;
+    margin: 20% auto;
+    padding: 20px;
+    width: 60%;
+    box-shadow: 0px 0px 10px 0px #000;
+    position: relative;
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  /* Gaya tombol "Description" yang terlihat seperti label */
+  .custom-btn-hotel-label {
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
+  }
+
+  .custom-btn-hotel-label:hover {
+    text-decoration: none;
+  }
+
+  /* Checkbox yang disembunyikan */
+  #description-toggle {
+    display: none;
+  }
+
+  /* Gaya label yang berfungsi sebagai tombol "Description" */
+  .custom-btn-hotel-label {
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
+  }
+
+  .view-box {
+            text-align: center;
+        }
+
+        /* Style for the pop-up box container */
+        .popup-container {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+            z-index: 998; /* Behind the pop-up */
+        }
+
+        /* Style for the pop-up box */
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }

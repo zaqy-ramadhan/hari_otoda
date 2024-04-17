@@ -1,0 +1,20 @@
+stages:
+    - deploy
+
+deploy-onpremise:
+  stage: deploy
+  before_script:
+      - echo "Before script section===emboh"
+      - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+      - eval $(ssh-agent -s)
+      - mkdir -p ~/.ssh
+      - ssh-add <(echo "$SSH_KEY")
+      - ssh-keyscan -p1985 -H '172.18.0.77' >> ~/.ssh/known_hosts
+  script:
+    # Upload new files without .git directory, .gitlab-ci.yml und .htaccess'S files
+    - rsync -avzuh -O -e 'ssh -p1985' ./ deployer-dinkominfo@172.18.0.77:/data/opd_dinkominfo/u17/ --progress  --delete --exclude-from='.gitignore'
+    - echo "success"
+#   when: manual
+  only:
+    - master
+

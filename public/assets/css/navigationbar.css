@@ -1,0 +1,193 @@
+body {
+  font-family: 'lato', sans-serif;
+}
+
+.navbar {
+  padding: 10px 20px;
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+  background-color: #ffffff;
+  z-index: 1000;
+  font-weight: bold;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.mobile-list li a:hover {
+  color: red; /* Warna teks menjadi merah saat dihover */
+  text-decoration: none; /* Hilangkan garis bawah bawaan */
+  border-bottom: 2px solid red; /* Mengatur lebar dan warna garis bawah saat dihover */
+}
+
+/* Tautan navigasi saat aktif (sesuai halaman yang sedang dilihat) */
+.mobile-list li.active a {
+  color: #cb0001; /* Warna teks saat aktif */
+  text-decoration: none; /* Hilangkan garis bawah bawaan */
+  border-bottom: 2px solid #cb0001; /* Mengatur lebar dan warna garis bawah saat aktif */
+}
+.navbar ul {
+  flex: 2; /* Middle column takes up most of the space */
+  text-align: center; /* Center-align the middle column */
+  font-family: 'lato', sans-serif;
+}
+
+.navbar ul li {
+  display: inline-block;
+  margin: 0 35px;
+  font-size: 18px;
+}
+
+.Logo {
+  display: flex;
+  align-items: center;
+}
+.Logo img {
+  width: 100%; /* Mengisi lebar elemen img */
+  height: 100%; /* Mengisi tinggi elemen img */
+  object-fit: contain; /* Atur gambar untuk mengisi elemen tanpa merubah rasio aspek */
+}
+
+.box-sound {
+  width: 120px;
+  height: 30px;
+  background-color: #eee; /* Warna latar belakang */
+  border-radius: 20px; /* Border radius untuk kotak */
+  color: #cb0001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.box-switch {
+  width: 75px;
+  height: 30px;
+  background-color: #eeeeee; /* Warna latar belakang */
+  border-radius: 20px; /* Border radius untuk kotak */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Mengatur tombol ke ujung kanan shape */
+  cursor: pointer;
+  margin: 5px;
+  overflow: hidden; /* Mengatasi overflow dari lingkaran */
+  transition: justify-content 0.3s ease; /* Animasi perubahan posisi tombol */
+}
+
+/* Style untuk tombol switch bahasa */
+.language-switch-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  background-color: #cb0001; /* Warna lingkaran switch */
+  border-radius: 50%; /* Membuat lingkaran dengan border-radius */
+  cursor: pointer;
+  transition: margin-left 0.3s ease; /* Animasi perubahan posisi lingkaran */
+}
+
+.icon-text {
+  font-size: 14px;
+  color: #cb0001; /* Warna teks */
+  font-family: Arial, sans-serif;
+  text-align: center;
+  cursor: pointer;
+  transition: margin-left 0.3s ease; /* Animasi perubahan posisi teks */
+}
+
+/* Style untuk teks "ENG" dan "IND" */
+.text.eng {
+  margin-left: 5px; /* Jarak dari lingkaran saat posisi "ENG" */
+  margin-right: 0px;
+}
+
+.text.ind {
+  margin-left: -5px; /* Jarak dari lingkaran saat posisi "IND" */
+  margin-right: 10px;
+}
+
+/* Style saat tombol switch berada di ujung kiri shape */
+.box-switch.left .circle {
+  margin-left: 0;
+}
+
+.box-switch.left .icon-text {
+  margin-left: -25px;
+  margin-right: 35px;
+}
+
+.mobile-list {
+  display: none;
+}
+
+.desktop-list{
+  align-items: center;
+}
+
+.desktop-list li a:hover {
+  color: red; /* Warna teks menjadi merah saat dihover */
+  text-decoration: none; /* Hilangkan garis bawah bawaan */
+  border-bottom: 2px solid red; /* Mengatur lebar dan warna garis bawah saat dihover */
+}
+
+/* Tautan navigasi saat aktif (sesuai halaman yang sedang dilihat) */
+.desktop-list li.active a {
+  color: #cb0001; /* Warna teks saat aktif */
+  text-decoration: none; /* Hilangkan garis bawah bawaan */
+  border-bottom: 2px solid #cb0001; /* Mengatur lebar dan warna garis bawah saat aktif */
+}
+
+@media only screen and (max-width: 992px) {
+  .desktop-list {
+    display: none;
+    text-align: center;
+  }
+
+  .mobile-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: whitesmoke;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 0;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .mobile-list li {
+    text-align: center;
+    padding: 5px;
+    min-width: 0;
+  }
+
+  .mobile-list a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mobile-list i {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .mobile-list li {
+    text-align: center;
+    padding: 5px 0;
+  }
+  .mobile-list i {
+    font-size: 16px; /* Sesuaikan ukuran ikon */
+  }
+
+  .mobile-list .nav-name {
+    font-size: 10px; 
+    margin-top: -25px;
+  }
+}

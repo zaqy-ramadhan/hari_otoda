@@ -1,0 +1,99 @@
+.slider .owl-item.active.center .slider-card {
+  transform: scale(1.5);
+  opacity: 1;
+}
+.slider-card {
+  padding: 0px 0px;
+  margin: 25% 10%;
+  border-radius: 5px;
+  transform: scale(1);
+  opacity: 0.1;
+  transition: all 0.3s;
+}
+.slider-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; 
+}
+.owl-nav .owl-prev {
+  position: absolute;
+  top: calc(50% - 50px);
+  left: 0;
+  opacity: 1;
+  font-size: 30px !important;
+  margin-right: 10px;
+  z-index: 1;
+  color: #FCD32B;
+}
+.owl-nav .owl-next {
+  position: absolute;
+  top: calc(50% - 50px);
+  right: 0;
+  opacity: 1;
+  margin-left: 10px;
+  font-size: 30px !important;
+  z-index: 1;
+  color: #FCD32B;
+}
+/* For screens up to 576px (e.g., mobile) */
+@media (max-width: 576px) {
+  .slider-card {
+    margin: 80% 26%; /* Adjusted margins for smaller screens */
+    transform: scale(2.5);
+  }
+  .slider .owl-item.active.center .slider-card {
+    transform: scale(3.5);
+  }
+
+  .owl-nav .owl-prev,
+  .owl-nav .owl-next {
+    top: calc(50% - 35px);
+    font-size: 20px !important;
+  }
+}
+
+/* For screens between 577px and 767px (e.g., small tablets) */
+@media (min-width: 577px) and (max-width: 767px) {
+  .slider-card {
+    margin: 80% 26%; /* Adjusted margins for smaller screens */
+    transform: scale(2.5);
+  }
+  .slider .owl-item.active.center .slider-card {
+    transform: scale(3.5);
+  }
+
+  .owl-nav .owl-prev,
+  .owl-nav .owl-next {
+    top: calc(50% - 35px);
+    font-size: 20px !important;
+  }
+}
+
+/* For screens between 768px and 991px (e.g., tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .slider-card {
+    margin: 80% 26%; /* Adjusted margins for smaller screens */
+    transform: scale(2.5);
+  }
+  .slider .owl-item.active.center .slider-card {
+    transform: scale(3.5);
+  }
+
+  .owl-nav .owl-prev,
+  .owl-nav .owl-next {
+    top: calc(50% - 35px);
+    font-size: 20px !important;
+  }
+}
+
+/* For screens 992px and larger (e.g., desktops) */
+@media (min-width: 992px) {
+  .slider-card {
+    margin: 55px 1px 0 1px; /* Default margins for larger screens */
+  }
+  .owl-nav .owl-prev,
+  .owl-nav .owl-next {
+    top: calc(50% - 20px);
+    font-size: 20px !important;
+  }
+}

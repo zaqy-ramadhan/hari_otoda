@@ -1,0 +1,58 @@
+/* Section One */
+.section-one-transport {
+    background-color: #630060;
+}
+
+.section-two-transport {
+    background-color: #A786BC; /* Blue background color */
+    border-top-left-radius: 100px; /* Adjust the radius as needed */
+    border-top-right-radius: 100px;
+}
+
+.section-three-transport {
+    background-color: #F19E4A; /* Green background color */
+    border-top-left-radius: 100px; /* Adjust the radius as needed */
+    border-top-right-radius: 100px; /* Adjust the radius as needed */
+    padding-top: 5%;
+}
+
+.section-four-transport{
+    background-color: #CB6600; /* Green background color */
+    border-top-left-radius: 100px; /* Adjust the radius as needed */
+    border-top-right-radius: 100px; /* Adjust the radius as needed */
+    padding-top: 5%;
+}
+
+.title-transport{
+  margin: 60px 0;
+  color: #052451;
+  font-size: 30px;
+  font-family: 'lato', sans-serif ;
+  font-weight: 800;
+}
+
+.custom-card-transport{
+  width: 50%;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-card-transport:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.title-bus{
+  color: #052451;
+  font-size: 25px;
+  font-family: 'lato', sans-serif ;
+  font-weight: 800;
+}
+
+.description-bus{
+  color: #052451;
+  font-size: 14px;
+  font-family: 'lato', sans-serif ;
+  font-weight: 400;
+}

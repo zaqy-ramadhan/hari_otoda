@@ -1,0 +1,127 @@
+/* Mengatur margin kanan dan kiri menjadi 4cm pada layar penuh */
+footer {
+    background-color: #052451;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (min-width: 1200px) {
+    
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: calc(100% - 6cm);
+        margin: 0 auto;
+        padding: 0 20px;
+        padding-top: 40px;
+        padding-bottom: 24px;
+    }
+    
+    .left-section {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo img {
+        width: 80% !important;
+        position: relative !important;
+    }
+    
+    .right-section {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        text-align: left;
+        margin-top: 20px;
+    }
+    
+    p {
+        margin-bottom: 0.5rem;
+    }
+    .social-icon {
+        font-size: 24px;
+        color: #fff;
+        text-decoration: none; 
+        margin: 0 5px; 
+    }
+
+    .footer-line {
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        margin: 20px 4cm; /* Margin atas dan bawah 20px, kiri dan kanan 4cm pada layar penuh */
+        margin-top: 20px;
+    }
+
+    .copyright {
+        font-family: sans-serif;
+        font-size: 14px;
+        margin: 0 4cm; /* Margin kiri dan kanan 4cm pada layar penuh */
+        margin-top: 30px;
+        margin-bottom: 0px;
+        text-align: left;
+        background-color: #052451;
+    }
+}
+
+/* Mengatur margin kanan dan kiri menjadi 0.5cm pada layar yang lebih kecil */
+@media (max-width: 1199px) {
+    
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: calc(100% - 0.5cm);
+        margin: 0 0.5cm;
+        padding: 0 20px;
+        padding-top: 40px;
+        padding-bottom: 24px;
+    }
+    
+    .left-section {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo img {
+        width: 80% !important;
+        position: relative !important;
+    }
+    
+    .right-section {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        text-align: left;
+        margin-top: 20px;
+    }
+    
+    p {
+        margin-bottom: 0.5rem;
+    }
+
+    .social-icon {
+        font-size: 14px;
+        color: #fff;
+        text-decoration: none; 
+        margin: 0 5px; 
+    }
+
+
+    .footer-line {
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        margin: 20px 1cm; /* Margin atas dan bawah 20px, kiri dan kanan 0.5cm pada layar yang lebih kecil */
+        margin-top: 20px;
+    }
+
+    .copyright {
+        font-family: sans-serif;
+        font-size: 14px;
+        margin: 0 1cm; /* Margin kiri dan kanan 0.5cm pada layar yang lebih kecil */
+        margin-top: 30px;
+        margin-bottom: 55px;
+        text-align: left;
+    }
+}

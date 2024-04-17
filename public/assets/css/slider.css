@@ -1,0 +1,483 @@
+.slide-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; /* Make the slide container responsive */
+}
+
+.slide-stadium {
+    flex: 0 0 calc(75% - 4px); /* Display 4 cards at a time with a 10px margin between them */
+    margin-right: 2px; /* Add right margin between cards */
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 0px;
+}
+
+.card-stadium {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%; 
+    height: 90%;
+}
+
+.stadium {
+    font-weight: 700;
+    color: #575757;
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+
+.stadium-city {
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #CB0001;
+}
+.content-stadium {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.img-right {
+    max-width: 22%;
+    align-self: flex-end;
+}
+
+.slide-container-middle-section {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; /* Make the slide container responsive */
+}
+
+.slide-middle-section {
+    flex: 0 0 calc(30% - 15px); /* Display 4 cards at a time with a 30px margin between them */
+    margin-right: 15x; /* Add right margin between cards */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.card-middle-section {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 0px;
+    width: 100%; 
+}
+
+.middle-img{
+  width: 100%;
+}
+
+.text-middle-section {
+    font-size: 10px;
+    text-decoration: none;
+    color: #575757;
+    font-weight: 900;
+}
+
+.slide-container-bottom-section {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.slide-bottom-section {
+    padding: 10px;
+    box-sizing: border-box;
+    flex: 0 0 calc(100% / 4); /* Set width for 4 items in a row */
+}
+
+.card-bottom-section {
+    color: transparent;
+    border-radius: 10px;
+    padding: 0;
+    width: 100%; /* Make the cards responsive */
+}
+
+.text-bottom-section {
+    font-size: 17px;
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    margin-top: 16px;
+}
+.controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    font-size: 5px;
+    padding: 10px 0px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Add CSS for arrow icons */
+.arrow-icon {
+    font-size: 15px;
+}
+
+#prevBtn .arrow-icon::before, #prevBtnBS .arrow-icon::before, 
+#prevBtnMS .arrow-icon::before {
+    content: '\2190'; /* Left arrow */
+}
+
+#nextBtn .arrow-icon::before, #nextBtnBS .arrow-icon::before,
+#nextBtnMS .arrow-icon::before {
+    content: '\2192'; /* Right arrow */
+}
+
+.dots {
+    text-align: left; /* Align dots to the left */
+    float: left; /* Add float to move dots to the left side */
+    margin-top: 10px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.active-dot {
+    background-color: #CB0001; 
+}
+
+.custom-slider .slick-slide {
+    transition: all 0.3s ease-in-out;
+}
+
+
+#prevBtn, #nextBtn, #prevBtnBS, #nextBtnBS, #prevBtnMS, #nextBtnMS  {
+    margin-left: 5px;
+    fill: #EEEEEE;
+    stroke: #EEEEEE;
+    font-size: 10px;
+    float: right;
+
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    .slide {
+        flex: 0 0 50%; /* Display 2 cards at a time for medium screens */
+    }
+}
+
+/* Media query for extra small screens */
+@media (max-width: 480px) {
+    .slide {
+        flex: 0 0 100%; /* Display 1 card at a time for small screens */
+    }
+}
+/* Reduce the margin between "Previous" and "Next" buttons */
+#prevBtn, #prevBtnBS, #prevBtnMS {
+    margin-right: 0px; /* Adjust the margin as needed */
+}
+
+/* Rotate the SVG inside the "Next" button */
+#nextBtn img,  #nextBtnBS img, #nextBtnMS img{
+    transform: rotate(180deg); /* Rotate the SVG by 180 degrees */
+}
+.text-middle-section {
+    padding-left: 15px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+@media (max-width: 767px) {
+    .slide-middle-section {
+      flex: 0 0 100%; /* Tampilkan 1 kartu pada satu waktu untuk perangkat kecil */
+      margin-right: 0; /* Hilangkan margin antara kartu */
+    }
+
+    .slide-container-middle-section {
+      display: flex;
+      flex-direction: row;
+      scroll-behavior: smooth;
+      overflow-x: scroll; 
+    }
+
+    .text-middle-section {
+      font-size: 12px;
+      padding-left: 15px;
+    }
+}
+
+.slider .owl-item.active.center .slider-card {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+  .slider-card {
+    padding: 0px 0px;
+    margin: 25% 10%;
+    border-radius: 5px;
+    transform: scale(1);
+    opacity: 0.1;
+    transition: all 0.3s;
+  }
+  .slider-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+  }
+  .owl-nav .owl-prev {
+    position: absolute;
+    top: calc(50% - 50px);
+    left: 0;
+    opacity: 1;
+    font-size: 30px !important;
+    margin-right: 10px;
+    z-index: 1;
+    color: #FCD32B;
+  }
+  .owl-nav .owl-next {
+    position: absolute;
+    top: calc(50% - 50px);
+    right: 0;
+    opacity: 1;
+    margin-left: 10px;
+    font-size: 30px !important;
+    z-index: 1;
+    color: #FCD32B;
+  }
+  /* For screens up to 576px (e.g., mobile) */
+  @media (max-width: 576px) {
+    .slider-card {
+      margin: 80% 26%; /* Adjusted margins for smaller screens */
+      transform: scale(2.5);
+    }
+    .slider .owl-item.active.center .slider-card {
+      transform: scale(3.5);
+    }
+  
+    .owl-nav .owl-prev,
+    .owl-nav .owl-next {
+      top: calc(50% - 35px);
+      font-size: 20px !important;
+    }
+  }
+  
+  /* For screens between 577px and 767px (e.g., small tablets) */
+  @media (min-width: 577px) and (max-width: 767px) {
+    .slider-card {
+      margin: 80% 26%; /* Adjusted margins for smaller screens */
+      transform: scale(2.5);
+    }
+    .slider .owl-item.active.center .slider-card {
+      transform: scale(3.5);
+    }
+  
+    .owl-nav .owl-prev,
+    .owl-nav .owl-next {
+      top: calc(50% - 35px);
+      font-size: 20px !important;
+    }
+  }
+  
+  /* For screens between 768px and 991px (e.g., tablets) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .slider-card {
+      margin: 80% 26%; /* Adjusted margins for smaller screens */
+      transform: scale(2.5);
+    }
+    .slider .owl-item.active.center .slider-card {
+      transform: scale(3.5);
+    }
+  
+    .owl-nav .owl-prev,
+    .owl-nav .owl-next {
+      top: calc(50% - 35px);
+      font-size: 20px !important;
+    }
+  }
+  
+  /* For screens 992px and larger (e.g., desktops) */
+  @media (min-width: 992px) {
+    .slider-card {
+      margin: 55px 1px 0 1px; /* Default margins for larger screens */
+    }
+    .owl-nav .owl-prev,
+    .owl-nav .owl-next {
+      top: calc(50% - 20px);
+      font-size: 20px !important;
+    }
+  }
+  
+  
+.owl-carousel {
+    display: none;
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
+    /* position relative and z-index fix webkit rendering fonts issue */
+    position: relative;
+    z-index: 1; }
+    .owl-carousel .owl-stage {
+      position: relative;
+      -ms-touch-action: pan-Y; }
+    .owl-carousel .owl-stage:after {
+      content: ".";
+      display: block;
+      clear: both;
+      visibility: hidden;
+      line-height: 0;
+      height: 0; }
+    .owl-carousel .owl-stage-outer {
+      position: relative;
+      overflow: hidden;
+      /* fix for flashing background */
+      -webkit-transform: translate3d(0px, 0px, 0px); }
+    .owl-carousel .owl-item {
+      position: relative;
+      min-height: 1px;
+      float: left;
+      -webkit-backface-visibility: hidden;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-touch-callout: none; }
+    .owl-carousel .owl-item img {
+      display: block;
+      width: 100%;
+      -webkit-transform-style: preserve-3d; }
+    .owl-carousel .owl-nav.disabled,
+    .owl-carousel .owl-dots.disabled {
+      display: none; }
+    .owl-carousel .owl-nav .owl-prev,
+    .owl-carousel .owl-nav .owl-next,
+    .owl-carousel .owl-dot {
+      cursor: pointer;
+      cursor: hand;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
+    .owl-carousel.owl-loaded {
+      display: block; }
+    .owl-carousel.owl-loading {
+      opacity: 0;
+      display: block; }
+    .owl-carousel.owl-hidden {
+      opacity: 0; }
+    .owl-carousel.owl-refresh .owl-item {
+      visibility: hidden; }
+    .owl-carousel.owl-drag .owl-item {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
+    .owl-carousel.owl-grab {
+      cursor: move;
+      cursor: grab; }
+    .owl-carousel.owl-rtl {
+      direction: rtl; }
+    .owl-carousel.owl-rtl .owl-item {
+      float: right; }
+  
+  /* No Js */
+  .no-js .owl-carousel {
+    display: block; }
+  
+  /*
+   *  Owl Carousel - Animate Plugin
+   */
+  .owl-carousel .animated {
+    -webkit-animation-duration: 1000ms;
+            animation-duration: 1000ms;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both; }
+  
+  .owl-carousel .owl-animated-in {
+    z-index: 0; }
+  
+  .owl-carousel .owl-animated-out {
+    z-index: 1; }
+  
+  .owl-carousel .fadeOut {
+    -webkit-animation-name: fadeOut;
+            animation-name: fadeOut; }
+  
+  @-webkit-keyframes fadeOut {
+    0% {
+      opacity: 1; }
+    100% {
+      opacity: 0; } }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1; }
+    100% {
+      opacity: 0; } }
+  
+  /*
+   * 	Owl Carousel - Auto Height Plugin
+   */
+  .owl-height {
+    transition: height 500ms ease-in-out; }
+  
+  /*
+   * 	Owl Carousel - Lazy Load Plugin
+   */
+  .owl-carousel .owl-item .owl-lazy {
+    opacity: 0;
+    transition: opacity 400ms ease; }
+  
+  .owl-carousel .owl-item img.owl-lazy {
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d; }
+  
+  /*
+   * 	Owl Carousel - Video Plugin
+   */
+  .owl-carousel .owl-video-wrapper {
+    position: relative;
+    height: 100%;
+    background: #000; }
+  
+  .owl-carousel .owl-video-play-icon {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    left: 50%;
+    top: 50%;
+    margin-left: -40px;
+    margin-top: -40px;
+    background: url("owl.video.play.png") no-repeat;
+    cursor: pointer;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+    transition: -webkit-transform 100ms ease;
+    transition: transform 100ms ease; }
+  
+  .owl-carousel .owl-video-play-icon:hover {
+    -webkit-transform: scale(1.3, 1.3);
+        -ms-transform: scale(1.3, 1.3);
+            transform: scale(1.3, 1.3); }
+  
+  .owl-carousel .owl-video-playing .owl-video-tn,
+  .owl-carousel .owl-video-playing .owl-video-play-icon {
+    display: none; }
+  
+  .owl-carousel .owl-video-tn {
+    opacity: 0;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: opacity 400ms ease; }
+  
+  .owl-carousel .owl-video-frame {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%; }
+  
