@@ -37,14 +37,16 @@
   </div>
   <div class="container mt-4">
     <div class="row p-5" style="background-color: #181C24; border-radius:100px">
-      <div class="col-md-6">
-        <img class="img-fluid" src="assets/img/indonesia 1.svg" alt="">
+      <div class="col d-flex justify-content-center">
+        <img class="img-fluid" src="assets/img/otoda 28 lg.svg" alt="">
       </div>
-      <div class="col">
-        <p style="color:white; font-weight:400">
-          Otonomi daerah merupakan konsep pemberian wewenang kepada daerah otonom atau wilayah administratif tertentu untuk mengatur dan mengelola urusan pemerintahan serta pembangunan di tingkat lokal sesuai dengan kebutuhan dan karakteristiknya sendiri. Konsep ini memberikan kesempatan bagi daerah untuk lebih mandiri dalam mengambil keputusan yang berhubungan dengan masalah lokal, seperti pengelolaan keuangan, pendidikan, kesehatan, infrastruktur, dan lain sebagainya.
-        </p>
-        <a href="" class="btn btn-warning" style="border-radius: 50px;">Rangkaian Acara HUT OTODA</a>
+      <div class="col d-flex align-items-center">
+        <div>
+          <p style="color:white; font-weight:400">
+            Otonomi daerah merupakan konsep pemberian wewenang kepada daerah otonom atau wilayah administratif tertentu untuk mengatur dan mengelola urusan pemerintahan serta pembangunan di tingkat lokal sesuai dengan kebutuhan dan karakteristiknya sendiri. Konsep ini memberikan kesempatan bagi daerah untuk lebih mandiri dalam mengambil keputusan yang berhubungan dengan masalah lokal, seperti pengelolaan keuangan, pendidikan, kesehatan, infrastruktur, dan lain sebagainya.
+          </p>
+          <a href="" class="btn btn-warning" style="border-radius: 50px;">Rangkaian Acara HUT OTODA</a>
+        </div>
       </div>
     </div>
   </div>
